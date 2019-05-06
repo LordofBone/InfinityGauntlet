@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
 #import necessary modules here
-import RPi.GPIO as GPIO
 import random
 import time
 import sys
@@ -13,12 +12,6 @@ from operator import itemgetter
 import unicornhat as unicorn
 
 from mcpi.minecraft import Minecraft
-
-#ir sensor pin
-sensor = 16
-
-GPIO.setmode(GPIO.BOARD)
-GPIO.setup(sensor,GPIO.IN)
 
 #set minecraft mode to false by default
 minecraftMode = False
